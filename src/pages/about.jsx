@@ -168,7 +168,7 @@ function App() {
               <h3 className="text-3xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-300">
                 Dhruv Sharma
               </h3>
-              <p>
+              <p className="text-purple-400 text-xl mb-4">
                 Fmr. Additional Private Secretary to Hon’ble Union Minister,
                 Government of India | Founding Member I-PAC | Public Policy
                 Expert | Political Advisor | Election Campaign Manager
@@ -187,7 +187,7 @@ function App() {
               <h3 className="text-3xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-300">
                 David Patel
               </h3>
-              <p>
+              <p className="text-purple-400 text-xl mb-4">
                 Sahaja Yogi | LinkedIn Top Voice | Quantum Consulting Strategist
                 | Top Global BPO Expert | Start-up Mentor | Elevating Growth
                 Through Innovative Solutions | Co-founder & COO of The Nistula
