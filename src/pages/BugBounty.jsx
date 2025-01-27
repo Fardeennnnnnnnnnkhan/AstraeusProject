@@ -2,7 +2,11 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Bug, Shield, Award, AlertTriangle } from "lucide-react";
-
+import { MdDocumentScanner } from "react-icons/md";
+import { HiMiniChartBar } from "react-icons/hi2";
+import { TbShieldCheckFilled } from "react-icons/tb";
+import { HiLockClosed } from "react-icons/hi";
+import { MdCloudUpload } from "react-icons/md";
 const BugBounty = () => {
   // Create a ref for the Bug Bounty Program section
   const programSectionRef = useRef(null);
@@ -76,9 +80,9 @@ const BugBounty = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-200">
-              Bug Bounty{" "}
+              Bug {" "}
               <span className="bg-gradient-to-r from-white to-purple-400 bg-clip-text text-transparent">
-                Program
+              Bounty
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 mt-4 max-w-3xl mx-auto">
@@ -136,24 +140,67 @@ const BugBounty = () => {
             ))}
           </motion.div>
           <motion.div
-className="bg-[#1B1339] border border-gray-700 rounded-xl p-10"
-initial={{ opacity: 0 }}
-animate={{ opacity: 1 }}
-transition={{ delay: 0.5, duration: 0.8 }}
+  className="bg-gradient-to-b from-[#1B1339] to-[#2A1F52] border border-gray-800 rounded-xl p-12 shadow-2xl"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.3, duration: 0.8 }}
 >
-<div className="flex items-center mb-6">
-  <AlertTriangle className="h-8 w-8 text-purple-400 mr-4" />
-  <h2 className="text-3xl font-bold text-white">Submission Guidelines</h2>
-</div>
-<ul className="list-disc list-inside text-gray-400 space-y-4 pl-4">
-  <li>Provide detailed steps to reproduce the vulnerability.</li>
-  <li>Include proof of concept or screenshots when applicable.</li>
-  <li>Document the potential impact and severity of the issue.</li>
-  <li>Follow responsible disclosure practices.</li>
-  <li>Avoid any testing that could harm systems or compromise data.</li>
-  <li>Submit findings through our secure submission platform.</li>
-</ul>
+  <div className="text-center mb-10">
+    <h2 className="text-4xl font-extrabold text-white mb-4">Bug Bounty Features</h2>
+    <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+      Our Bug Bounty program is designed to prioritize security and empower ethical hackers with clear guidelines and robust rewards.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {/* Feature Cards */}
+    {[
+      {
+        title: "Reproducible Steps",
+        description: "Provide detailed steps to replicate vulnerabilities accurately.",
+        icon: <AlertTriangle className="h-10 w-10 text-purple-400" />,
+      },
+      {
+        title: "Proof of Concept",
+        description: "Include screenshots or PoC to validate your findings.",
+        icon: <MdDocumentScanner className="h-10 w-10 text-blue-400" />,
+      },
+      {
+        title: "Impact Documentation",
+        description: "Document the potential impact and severity of the issue discovered.",
+        icon: <HiMiniChartBar className="h-10 w-10 text-green-400" />,
+      },
+      {
+        title: "Responsible Disclosure",
+        description: "Follow ethical practices to ensure secure communication.",
+        icon: <TbShieldCheckFilled className="h-10 w-10 text-yellow-400" />,
+      },
+      {
+        title: "Safe Testing Environment",
+        description: "Avoid any testing that could harm systems or compromise data.",
+        icon: <HiLockClosed className="h-10 w-10 text-red-400" />,
+      },
+      {
+        title: "Secure Submission",
+        description: "Submit findings through our secure and trusted platform.",
+        icon: <MdCloudUpload className="h-10 w-10 text-indigo-400" />,
+      },
+    ].map((feature, index) => (
+      <motion.div
+        key={index}
+        className="bg-[#252040] border border-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300"
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="flex items-center mb-4">
+          {feature.icon}
+          <h3 className="text-2xl font-bold text-white ml-4">{feature.title}</h3>
+        </div>
+        <p className="text-gray-400">{feature.description}</p>
+      </motion.div>
+    ))}
+  </div>
 </motion.div>
+
 
 {/* Call to Action */}
 <motion.div
@@ -166,7 +213,7 @@ transition={{ delay: 0.7, duration: 0.8 }}
   to="/"
   className="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-indigo-500 hover:to-purple-500 px-8 py-4 rounded-lg text-xl font-bold text-white transition-transform hover:scale-105"
 >
-  Submit a Report
+  Submit a Request
 </Link>
 </motion.div>
         </motion.div>

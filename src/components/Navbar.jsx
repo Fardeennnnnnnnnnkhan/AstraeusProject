@@ -82,11 +82,7 @@ const Navbar = () => {
             className="flex items-center space-x-2"
             onClick={() => setIsMenuOpen(false)}
           >
-            <img
-              src="https://astraeus.sentritalabs.com/wp-content/uploads/2024/08/Astraeus-Logo.png"
-              alt="Astraeus Next Gen Logo"
-              className="h-10 w-auto"
-            />
+            <Globe2 className="h-10  w-10 text-purple-400" />
           </Link>
         </div>
 

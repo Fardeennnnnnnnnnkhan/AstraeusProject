@@ -7,13 +7,14 @@ import BugBounty from './pages/BugBounty';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop
+import About from './pages/About'; // Corrected to "About" instead of "about"
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-b from-[#0a0515] to-[#150833] text-white">
         <Navbar />
-        <ScrollToTop /> 
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -21,6 +22,7 @@ function App() {
           <Route path="/minerva" element={<Minerva />} />
           <Route path="/bug-bounty" element={<BugBounty />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} /> {/* Updated path */}
         </Routes>
         <Footer />
       </div>

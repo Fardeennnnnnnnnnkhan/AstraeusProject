@@ -91,27 +91,27 @@ const Home = () => {
   return (
     <div className="pt-16">
       {/* Header Section */}
-      <div className="relative h-screen flex items-center justify-center bg-gradient-to-b from-slate-900 to-slate-800">
+      <div className="relative h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900">
+        {/* Video Background */}
         <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
+          <video
+            src="https://cdn.pixabay.com/video/2016/09/13/5194-183786499_tiny.mp4"
+            loop
+            autoPlay
+            muted
             alt="Space"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-70"
           />
         </div>
+
+        {/* Text Content */}
         <div className="relative text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-600 to-pink-500 drop-shadow-2xl">
             Astraeus Next Gen
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white drop-shadow-lg font-light">
             Pioneering the future of network infrastructure and intelligent systems
           </p>
-          <button
-            onClick={() => scrollToSection(servicesRef)}
-            className="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-indigo-500 hover:to-purple-500 px-8 py-4 rounded-lg text-xl font-bold text-white transition-transform hover:scale-105"
-          >
-            Explore Our Services
-          </button>
         </div>
       </div>
 
