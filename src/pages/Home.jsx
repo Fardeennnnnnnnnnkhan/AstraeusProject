@@ -148,124 +148,135 @@ const Home = () => {
 
       {/* Book a Demo Section */}
       <section
-        ref={demoRef}
-        className="py-20 bg-gradient-to-b from-[#2C2748] to-[#1B1339] text-white"
+  ref={demoRef}
+  className="py-20 bg-gradient-to-b from-[#2C2748] to-[#1B1339] text-white"
+>
+  <motion.div
+    className="max-w-7xl mx-auto flex items-center justify-between px-8"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: isSectionVisibleDemo ? 1 : 0 }}
+    transition={{ duration: 1 }}
+  >
+    <div className="w-1/2">
+      <img
+        src="https://via.placeholder.com/400x300?text=Book+Demo+Image"
+        alt="Book a Demo Illustration"
+        className="w-full h-full object-cover rounded-lg transform transition-all duration-500 hover:scale-105"
+      />
+      <p className="text-center mt-4 text-sm text-gray-400">
+        Explore cutting-edge solutions to drive your business forward.
+      </p>
+    </div>
+    <div className="w-1/2 pl-16">
+      <motion.h3
+        className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isSectionVisibleDemo ? 1 : 0 }}
+        transition={{ duration: 1 }}
       >
-        <motion.div
-          className="max-w-7xl mx-auto flex items-center justify-between px-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isSectionVisibleDemo ? 1 : 0 }}
-          transition={{ duration: 1 }}
-        >
-          <div className="w-1/2">
-            <img
-              src="https://via.placeholder.com/400x300"
-              alt="Demo Illustration"
-              className="w-full h-full object-cover rounded-lg transform transition-all duration-500 hover:scale-105"
-            />
-            <p className="text-center mt-4 text-sm text-gray-400">
-              Explore cutting-edge solutions to drive your business forward.
-            </p>
-          </div>
-          <div className="w-1/2 pl-16">
-            <motion.h3
-              className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: isSectionVisibleDemo ? 1 : 0 }}
-              transition={{ duration: 1 }}
-            >
-              Book a Demo
-            </motion.h3>
-            <div className="bg-[#18152D] border border-gray-700 rounded-xl p-10 shadow-lg">
-              <form className="space-y-6">
-                <motion.div
-                  className="flex space-x-6"
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: isSectionVisibleDemo ? 1 : 0, x: isSectionVisibleDemo ? 0 : -50 }}
-                  transition={{ duration: 0.6 }}
-                >
-                  <div className="w-1/2">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Your Name"
-                      className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                    />
-                  </div>
-                  <div className="w-1/2">
-                    <input
-                      type="text"
-                      name="company"
-                      placeholder="Company Name"
-                      className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
-                      value={formData.company}
-                      onChange={handleInputChange}
-                    />
-                  </div>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: isSectionVisibleDemo ? 1 : 0, x: isSectionVisibleDemo ? 0 : -50 }}
-                  transition={{ duration: 0.8 }}
-                >
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                  />
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: isSectionVisibleDemo ? 1 : 0, x: isSectionVisibleDemo ? 0 : -50 }}
-                  transition={{ duration: 1 }}
-                >
-                  <input
-                    type="tel"
-                    name="contact"
-                    placeholder="Your Contact Number"
-                    className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
-                    value={formData.contact}
-                    onChange={handleInputChange}
-                  />
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: isSectionVisibleDemo ? 1 : 0, x: isSectionVisibleDemo ? 0 : -50 }}
-                  transition={{ duration: 1.2 }}
-                >
-                  <select
-                    name="option"
-                    className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
-                    value={formData.option}
-                    onChange={handleInputChange}
-                  >
-                    <option value="" disabled>
-                      Select Your Option
-                    </option>
-                    <option value="Vajra">Vajra</option>
-                    <option value="Minerva">Minerva</option>
-                    <option value="Bug Bounty">Bug Bounty</option>
-                  </select>
-                </motion.div>
-                <motion.button
-                  type="submit"
-                  className="w-full p-3 rounded-lg bg-purple-500 text-white font-bold hover:bg-purple-600 transition-all"
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: isSectionVisibleDemo ? 1 : 0, y: isSectionVisibleDemo ? 0 : 50 }}
-                  transition={{ duration: 1.5 }}
-                >
-                  Submit
-                </motion.button>
-              </form>
+        Book a Demo
+      </motion.h3>
+      <div className="bg-[#18152D] border border-gray-700 rounded-xl p-10 shadow-lg">
+        <form className="space-y-6">
+          <motion.div
+            className="flex space-x-6"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: isSectionVisibleDemo ? 1 : 0, x: isSectionVisibleDemo ? 0 : -50 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="w-1/2">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                value={formData.name}
+                onChange={handleInputChange}
+              />
             </div>
-          </div>
-        </motion.div>
-      </section>
+            <div className="w-1/2">
+              <input
+                type="text"
+                name="company"
+                placeholder="Company Name"
+                className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                value={formData.company}
+                onChange={handleInputChange}
+              />
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: isSectionVisibleDemo ? 1 : 0, x: isSectionVisibleDemo ? 0 : -50 }}
+            transition={{ duration: 0.8 }}
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
+              value={formData.email}
+              onChange={handleInputChange}
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: isSectionVisibleDemo ? 1 : 0, x: isSectionVisibleDemo ? 0 : -50 }}
+            transition={{ duration: 1 }}
+          >
+            <input
+              type="tel"
+              name="contact"
+              placeholder="Your Contact Number"
+              className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
+              value={formData.contact}
+              onChange={handleInputChange}
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: isSectionVisibleDemo ? 1 : 0, x: isSectionVisibleDemo ? 0 : -50 }}
+            transition={{ duration: 1.2 }}
+          >
+            <select
+              name="option"
+              className="w-full p-3 rounded-lg bg-[#2C2748] text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-400"
+              value={formData.option}
+              onChange={handleInputChange}
+            >
+              <option value="" disabled>
+                Select Your Option
+              </option>
+              <option value="Vajra">Vajra</option>
+              <option value="Minerva">Minerva</option>
+              <option value="Bug Bounty">Bug Bounty</option>
+            </select>
+          </motion.div>
+          <motion.button
+            type="submit"
+            className="w-full p-3 rounded-lg bg-purple-500 text-white font-bold hover:bg-purple-600 transition-all"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: isSectionVisibleDemo ? 1 : 0, y: isSectionVisibleDemo ? 0 : 50 }}
+            transition={{ duration: 1.5 }}
+          >
+            Submit
+          </motion.button>
+        </form>
+      </div>
+      <div className="mt-8 text-center">
+        <a
+          href="https://productive.io/book-a-demo/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-lg font-semibold text-purple-500 hover:underline"
+        >
+          Visit the Book a Demo Page
+        </a>
+      </div>
+    </div>
+  </motion.div>
+</section>
+
     </div>
   );
 };
