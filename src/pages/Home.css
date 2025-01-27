@@ -1,0 +1,29 @@
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply fadeIn animation */
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  /* Staggered delay for each service card */
+  .animate-fade-in-delay {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @media (max-width: 640px) {
+    /* Mobile optimization */
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  }
+  

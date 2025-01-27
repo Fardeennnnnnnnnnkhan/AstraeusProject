@@ -1,27 +1,5 @@
-/* .text-size {
-  font-size: 1rem; 
-  line-height: 1.5; 
-} */
-
-
-#vajra-text {
-  border-right: 2px solid transparent;  
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  animation:
-    typing 7s,
-    cursor 0.7s step-end infinite alternate;
-}
-
-@keyframes cursor {
-  0% { border-color: transparent; }  
-  100% { border-color: transparent; }  
-}
-
-@keyframes typing {
-  from { width: 0; } 
-  to { width: 100%; } 
+.animate-fade-in {
+  animation: fadeIn 1s ease-in forwards;
 }
 
 @keyframes fadeIn {
@@ -30,18 +8,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 1s ease-in-out forwards; 
-}
-
-@media (max-width: 640px) {
-  #vajra-text {
-    white-space: normal;
-    overflow: visible; 
-    animation: none; 
-    border-right: none; 
   }
 }
