@@ -3,7 +3,7 @@ import { Target, Eye, Building, Linkedin } from "lucide-react";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1B1339] to-[#2C2748]">
+    <div className="min-h-screen bg-#071630">
       <div className="pt-16 container mx-auto px-4">
         <div className="py-24">
           <div className="max-w-7xl mx-auto">
