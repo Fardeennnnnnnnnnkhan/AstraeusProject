@@ -8,7 +8,7 @@ function App() {
         <div className="py-24">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16 animate-fade-up">
-              <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-400 mb-6">
+              <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-cyan-400 mb-6">
                 About Us
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -23,8 +23,8 @@ function App() {
         <div className="mb-32 animate-fade-up animation-delay-200">
           <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-lg rounded-3xl p-10 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex items-center justify-center mb-8">
-              <Building className="w-12 h-12 text-purple-400 mr-4" />
-              <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-300">
+              <Building className="w-12 h-12 text-cyan-400 mr-4" />
+              <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-cyan-400">
                 Our Company
               </h2>
             </div>
@@ -55,8 +55,8 @@ function App() {
           {/* Mission Box */}
           <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-10 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 group animate-fade-left animation-delay-400">
             <div className="flex items-center mb-6 transform group-hover:translate-x-2 transition-transform duration-300">
-              <Target className="w-12 h-12 text-purple-400 mr-4" />
-              <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-300">
+              <Target className="w-12 h-12 text-cyan-400 mr-4" />
+              <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-cyan-400">
                 Our Mission
               </h2>
             </div>
@@ -72,8 +72,8 @@ function App() {
           {/* Vision Box */}
           <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-10 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 group animate-fade-right animation-delay-400">
             <div className="flex items-center mb-6 transform group-hover:translate-x-2 transition-transform duration-300">
-              <Eye className="w-12 h-12 text-purple-400 mr-4" />
-              <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-300">
+              <Eye className="w-12 h-12 text-cyan-400 mr-4" />
+              <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-cyan-400">
                 Our Vision
               </h2>
             </div>
@@ -89,7 +89,7 @@ function App() {
 
         {/* Founders Section */}
         <div className="mb-32 animate-fade-up animation-delay-600">
-          <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-300">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-cyan-400">
             Our Founders
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
@@ -114,7 +114,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <h3 className="text-3xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-300">
+              <h3 className="text-3xl font-bold mb-3 group-hover:text-cyan-400 transition-colors duration-300">
                 Shreejit Sen
               </h3>
               <p className="text-purple-400 text-xl mb-4">Co-Founder & CEO</p>
@@ -141,7 +141,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <h3 className="text-3xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-300">
+              <h3 className="text-3xl font-bold mb-3 group-hover:text-cyan-400 transition-colors duration-300">
                 Anush-Dhavale
               </h3>
               <p className="text-purple-400 text-xl mb-4">Founder & CEO</p>
@@ -151,7 +151,7 @@ function App() {
 
         {/* Advisors Section */}
         <div className="mb-0 px-5 py-5 animate-fade-up animation-delay-800">
-          <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-300">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-pink-300">
             Our Advisors
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
@@ -167,7 +167,7 @@ function App() {
               <h3 className="text-3xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-300">
                 Dhruv Sharma
               </h3>
-              <p className="text-purple-400 text-xl mb-4">
+              <p className="text-cyan-400 text-xl mb-4">
                 Fmr. Additional Private Secretary to Hon'ble Union Minister,
                 Government of India | Founding Member I-PAC | Public Policy
                 Expert | Political Advisor | Election Campaign Manager
@@ -186,7 +186,7 @@ function App() {
               <h3 className="text-3xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-300">
                 David Patel
               </h3>
-              <p className="text-purple-400 text-xl mb-4">
+              <p className="text-cyan-400 text-xl mb-4">
                 Sahaja Yogi | LinkedIn Top Voice | Quantum Consulting Strategist
                 | Top Global BPO Expert | Start-up Mentor | Elevating Growth
                 Through Innovative Solutions | Co-founder & COO of The Nistula
