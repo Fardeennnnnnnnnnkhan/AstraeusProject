@@ -117,7 +117,7 @@ function App() {
               <h3 className="text-3xl font-bold mb-3 group-hover:text-cyan-400 transition-colors duration-300">
                 Shreejit Sen
               </h3>
-              <p className="text-purple-400 text-xl mb-4">Co-Founder & CEO</p>
+              <p className="text-cyan-400 text-xl mb-4">Co-Founder & CEO</p>
             </div>
 
             {/* Founder 2 */}
@@ -144,7 +144,7 @@ function App() {
               <h3 className="text-3xl font-bold mb-3 group-hover:text-cyan-400 transition-colors duration-300">
                 Anush-Dhavale
               </h3>
-              <p className="text-purple-400 text-xl mb-4">Founder & CEO</p>
+              <p className="text-cyan-400 text-xl mb-4">Founder & CEO</p>
             </div>
           </div>
         </div>
